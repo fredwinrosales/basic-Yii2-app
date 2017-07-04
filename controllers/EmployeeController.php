@@ -64,4 +64,9 @@ class EmployeeController extends Controller
         return $this->render('edit', ['id' => $id]);
     }
 
+    public function actionStore()
+    {
+        return "Hola mundo";
+    }
+
 }
