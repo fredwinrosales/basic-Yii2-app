@@ -4,6 +4,8 @@ return [
     'enablePrettyUrl' => true,
     'showScriptName' => false,
     'rules' => [
-        'dashboard2' => 'site/index'
+        'dashboard' => 'site/index',
+        'employee/create' => 'employee/create',
+        'employee/edit/<id:>' => 'employee/edit'
     ],
 ];
