@@ -59,7 +59,9 @@ class EmployeeController extends Controller
         return $this->render('create');
     }
 
+    public function actionEdit($id)
     {
+        return $this->render('edit', ['id' => $id]);
     }
 
 }
