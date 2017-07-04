@@ -54,14 +54,12 @@ class EmployeeController extends Controller
         ));
     }
 
-    /**
-     * Displays homepage.
-     *
-     * @return string
-     */
     public function actionCreate()
     {
         return $this->render('create');
+    }
+
+    {
     }
 
 }
