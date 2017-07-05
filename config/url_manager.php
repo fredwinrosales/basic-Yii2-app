@@ -5,7 +5,8 @@ return [
     'showScriptName' => false,
     'rules' => [
         'dashboard' => 'site/index',
-        '<controller:>' => '<controller>/create',
-        '<controller:>/edit/<id:>' => '<controller>/edit'
+        //'<controller:>/all' => '<controller>/index',
+        '<controller:>/view/<id:>' => '<controller>/view',
+        //'<controller:>/update/<id:>' => '<controller>/update'
     ],
 ];
