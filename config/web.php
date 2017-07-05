@@ -40,9 +40,9 @@ $config = [
         ],
         'db' => [
             'class' => 'yii\db\Connection',
-            'dsn' => 'mysql:host=localhost;dbname=yii2basic',
+            'dsn' => 'mysql:host=localhost;dbname=yii2basic;unix_socket=/Applications/MAMP/tmp/mysql/mysql.sock',
             'username' => 'root',
-            'password' => '',
+            'password' => 'root',
             'charset' => 'utf8',
         ],
         'urlManager' => $url_manager,
