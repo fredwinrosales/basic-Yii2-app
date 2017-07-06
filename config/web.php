@@ -2,6 +2,7 @@
 
 $params = require(__DIR__ . '/params.php');
 $url_manager = require(__DIR__ . '/url_manager.php');
+$db = require(__DIR__ . '/db.php.example');
 
 $config = [
     'id' => 'basic',
@@ -38,13 +39,7 @@ $config = [
                 ],
             ],
         ],
-        'db' => [
-            'class' => 'yii\db\Connection',
-            'dsn' => 'mysql:host=localhost;dbname=yii2basic;unix_socket=/Applications/MAMP/tmp/mysql/mysql.sock',
-            'username' => 'root',
-            'password' => 'root',
-            'charset' => 'utf8',
-        ],
+        'db' => $db,
         'urlManager' => $url_manager,
     ],
     'params' => $params,
