@@ -2,7 +2,7 @@
 
 $params = require(__DIR__ . '/params.php');
 $url_manager = require(__DIR__ . '/url_manager.php');
-$db = require(__DIR__ . '/db.php.example');
+$db = require(__DIR__ . '/db.php');
 
 $config = [
     'id' => 'basic',
